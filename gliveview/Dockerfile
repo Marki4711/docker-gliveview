@@ -16,6 +16,6 @@ RUN ./prereqs.sh
 ADD https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/gLiveView.sh /gliveview/
 ADD https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/env /gliveview/
 RUN sed -i '/CNODE_PORT=6000/d' /gliveview/env
-RUN chmod 755 /gliveview/prereqs.sh
+RUN chmod 755 /gliveview/gLiveView.sh
 
 ENTRYPOINT echo "Container is running and sleeping" ; sleep infinity
